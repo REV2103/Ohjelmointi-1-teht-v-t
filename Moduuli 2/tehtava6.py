@@ -9,3 +9,4 @@ r6 = random.randint(1, 6)
 r7 = random.randint(1, 6)
 r8 = random.randint(1, 6)
 print(f"Satunnainen nelinumeroinen koodi: {r5}{r6}{r7}{r8}")
+
