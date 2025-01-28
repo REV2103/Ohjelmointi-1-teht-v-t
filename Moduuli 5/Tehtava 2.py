@@ -5,4 +5,4 @@ while luvut != "":
     luvut = input("Anna lisää lukuja tai paina enter kun et halua laittaa enempää ")
 else:
     luvut_list.sort(reverse=True)
-    print(luvut_list[0:4])
+    print(luvut_list[0:5])
