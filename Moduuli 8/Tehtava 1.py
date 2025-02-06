@@ -10,7 +10,6 @@ yhteys = mysql.connector.connect(
 )
 def hae_lentokentta_ICAO_koodilla(ICAO_koodi):
     sql = f"SELECT name, municipality from airport where ident= '{ICAO_koodi}'"
-    print(sql)
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
