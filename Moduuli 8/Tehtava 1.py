@@ -16,6 +16,8 @@ def hae_lentokentta_ICAO_koodilla(ICAO_koodi):
     if kursori.rowcount >0:
         for rivi in tulos:
             print(f"Lentokentän nimi on {rivi[0]} ja sen sijaintikunta on {rivi[1]}")
+    else:
+        print("Millään lentokentällä ei ole tätä ICAO-koodia")
     return
 ICAO_koodi = input("Anna lentokentän ICAO-koodi: ")
 hae_lentokentta_ICAO_koodilla(ICAO_koodi)
