@@ -33,7 +33,7 @@ def lentokentan_koordinaatit(ICAO_koodi1, ICAO_koodi2):
     eka = (lat1, long1)
     toka = (lat2, long2)
     etaisyys = distance.distance(eka, toka).km
-    print(f"Lentokenntien välilnen etäisyys on {etaisyys:.2f} kilometriä")
+    print(f"Lentokenttien välilnen etäisyys on {etaisyys:.2f} kilometriä")
     return
 
 ekalentkent = input("Anna ensimmäisen lentokentän ICAO-koodi: ")
