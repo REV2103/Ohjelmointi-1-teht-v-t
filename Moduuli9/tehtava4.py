@@ -24,13 +24,15 @@ for i in range(10):
     autolista.append(Auto(f"ABC-{1+i}", random.randint(100, 200), 0, 0))
 aika = 0
 for auto in autolista:
-    while True:
-        aika = aika + 1
+    while auto.matka <= 10000:
         auto.kiihdytä(random.randint(-10, 15))
         auto.kulje(aika)
-        if ktk == True:
-            break
-if ktk == True:
-    print(taulukon_tunnisteet)
-    for auto in autolista:
-        print(f"{auto.rekisteritunnus}, {auto.huippunopeus} km/h, {auto.th_nopeus} km/h, {auto.matka} km")
+        aika = aika + 1
+    if auto.matka <= 10000:
+        break
+print(taulukon_tunnisteet)
+for auto in autolista:
+    print(f"{auto.rekisteritunnus}, {auto.huippunopeus} km/h, {auto.th_nopeus} km/h, {auto.matka} km")
+
+
+
